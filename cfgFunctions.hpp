@@ -10,7 +10,8 @@ class CfgFunctions
 		class HelperFunctions
 		{
 			class addArsenal{file="37RMSBaseMod\functions\fn_addArsenal.sqf";};
-			class friendlyFile{file="37RMSBaseMod\functions\fn_friendlyFire.sqf";};
+			class friendlyFire{file="37RMSBaseMod\functions\fn_friendlyFire.sqf";};
+			class checkKeybinds{file="37RMSBaseMod\functions\fn_checkKeybinds.sqf";};
 		}
 	}
 };

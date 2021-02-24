@@ -14,7 +14,9 @@ if(isPlayer _unit) then{
 		[_unit, [missionNamespace, "inventory_var"]] call BIS_fnc_loadInventory;
 	}];
 	
-	_unit call RMS_fnc_friendlyFire;
+	[_unit] call RMS_fnc_friendlyFire;
+
+	[] remoteExec ["RMS_fnc_checkKeybinds", _unit];
 }
 else{
 	_unit allowFleeing 0;
