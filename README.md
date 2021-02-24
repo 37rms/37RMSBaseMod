@@ -5,3 +5,4 @@ Tento mód obstarává vypnutí staminy, přidání vlastního arsenalu, notifik
 
 Potřebné módy:
 - CBA_A3
+- ACE
