@@ -12,6 +12,7 @@ class CfgPatches
 			"A3_Functions_F",
 			"A3_Modules_F",
 			"cba_xeh",
+			"ace_common",
 		};
 		units[] = {};
 		weapons[] = {};
