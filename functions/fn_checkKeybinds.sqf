@@ -16,10 +16,10 @@ if(count _throwKeybind > 0 && 34 in _throwKeybind) then {
 		_aceKeyName = '"SHIFT" + '+_aceKeyName;
 	};
 	if(_isCtrl) then {
-		_aceKeyName = '"CTRL + '+_aceKeyName;
+		_aceKeyName = '"CTRL" + '+_aceKeyName;
 	};
 	if(_isAlt) then {
-		_aceKeyName = '"_isAlt + '+_aceKeyName;
+		_aceKeyName = '"ALT" + '+_aceKeyName;
 	};
 
 	["Máš nastavenou klávesu G na výchozí ArmA 3 házení granátů -> odeber si toto nastavení a používej " + _aceKeyName, "Klávesa na házení granátů", "Rozumím"] spawn BIS_fnc_guiMessage;
