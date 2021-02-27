@@ -17,6 +17,7 @@ if(isPlayer _unit) then{
 	[_unit] call RMS_fnc_friendlyFire;
 
 	[] remoteExec ["RMS_fnc_checkKeybinds", _unit];
+	[] remoteExec ["RMS_fnc_medical", _unit];
 }
 else{
 	_unit allowFleeing 0;

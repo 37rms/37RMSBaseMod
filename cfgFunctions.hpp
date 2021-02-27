@@ -13,5 +13,10 @@ class CfgFunctions
 			class friendlyFire{file="37RMSBaseMod\functions\fn_friendlyFire.sqf";};
 			class checkKeybinds{file="37RMSBaseMod\functions\fn_checkKeybinds.sqf";};
 		}
+		class MedicalFunctions
+		{
+			class handleMedicalAction{file="37RMSBaseMod\functions\fn_handleMedicalAction.sqf";};
+			class medical{file="37RMSBaseMod\functions\fn_medical.sqf";};
+		}
 	}
 };
