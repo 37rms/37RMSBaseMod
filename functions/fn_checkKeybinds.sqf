@@ -1,8 +1,6 @@
 if(!hasInterface) exitWith {};
 waitUntil{!isNull findDisplay 46};
 
-systemChat str "checking keybinds";
-
 private _throwKeybind = actionKeys "throw";
 if(count _throwKeybind > 0 && 34 in _throwKeybind) then {
 	private _index = ["ACE3 Weapons", "ace_advanced_throwing_prepare"] call cba_fnc_getKeybind;

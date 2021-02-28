@@ -1,5 +1,3 @@
-systemChat str "initMod.sqf";
-systemChat str hasInterface;
 if (hasInterface) then {
 	if(isNil{player getVariable "RMS_unitInitiated"}) then {
 		[player] call RMS_fnc_initPlayer;

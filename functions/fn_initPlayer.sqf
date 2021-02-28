@@ -10,19 +10,15 @@ removeStamina = {
 	_unit enableStamina false;
 };
 
-systemChat str "initializing player";
 [_unit] call removeStamina;
 
-systemChat str "adding killed event";
 _unit addEventHandler["Killed", {
 	params ["_unit", "_killer", "_instigator", "_useEffects"];
-	systemChat str "player died";
 	[_unit, [missionNamespace, "inventory_var"]] call BIS_fnc_saveInventory;
 }];
 
 _unit addEventHandler["Respawn", {
 	params["_unit", "_corpse"];
-	systemChat str "player respawned";
 	[_unit] call removeStamina;
 	[_unit, [missionNamespace, "inventory_var"]] call BIS_fnc_loadInventory;
 }];
