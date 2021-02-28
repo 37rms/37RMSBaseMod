@@ -1,7 +1,7 @@
-params ["_player"];
+params ["_unit"];
 
 systemChat str "adding friendly fire";
-player addEventHandler ["HandleDamage", {
+_unit addEventHandler ["HandleDamage", {
     params ["_victim", "_selection", "_damage", "_attacker", "_projectile", "_hitIndex", "_instigator", "_hitPoint"];
 
     systemChat str "damage event fired";

@@ -1,3 +1,4 @@
+params["_unit"];
 if(!hasInterface) exitWith{};
 
 systemChat str "adding medical event";
