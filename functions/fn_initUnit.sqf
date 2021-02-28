@@ -1,25 +1,18 @@
 params ["_unit"];
 
+waitUntil{alive _unit;};
+
 if(isPlayer _unit) then{
-	[_unit] call RMS_fnc_initPlayer;
-
-	_unit addEventHandler["Killed", {
-		params ["_unit", "_killer", "_instigator", "_useEffects"];
-		[_unit, [missionNamespace, "inventory_var"]] call BIS_fnc_saveInventory;
-	}];
-	
-	_unit addEventHandler["Respawn", {
-		params["_unit", "_corpse"];
-		[_unit] call RMS_fnc_initPlayer;
-		[_unit, [missionNamespace, "inventory_var"]] call BIS_fnc_loadInventory;
-	}];
-	
-	[_unit] call RMS_fnc_friendlyFire;
-
+	systemChat str "is player";
+	[] remoteExec ["RMS_fnc_initPlayer", _unit];
+	[] remoteExec ["RMS_fnc_registerPlayerKilled", _unit];
+	[] remoteExec ["RMS_fnc_registerPlayerRespawn", _unit];
+	[] remoteExec ["RMS_fnc_friendlyFire", _unit];
 	[] remoteExec ["RMS_fnc_checkKeybinds", _unit];
 	[] remoteExec ["RMS_fnc_medical", _unit];
 }
 else{
+	systemChat str "is ai";
 	_unit allowFleeing 0;
 	_unit setskill ["courage",1];
 	_unit setskill ["aimingAccuracy",0.05];

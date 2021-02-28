@@ -1,4 +1,6 @@
-params ["_unit"];
-_unit setCustomAimCoef 0.1;
-_unit enableFatigue false;
-_unit enableStamina false;
+if(!hasInterface) exitWith{};
+
+systemChat str "initializing player";
+player setCustomAimCoef 0.1;
+player enableFatigue false;
+player enableStamina false;

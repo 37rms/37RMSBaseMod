@@ -1,5 +1,7 @@
 class Extended_InitPost_EventHandlers {
     class CAManBase {
-		  init = "_this call RMS_fnc_initUnit;";
+        class initpost_units {
+            serverInit = "[_this select 0] call RMS_fnc_initUnit;";
+        };
     };
 };

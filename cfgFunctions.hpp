@@ -18,5 +18,10 @@ class CfgFunctions
 			class handleMedicalAction{file="37RMSBaseMod\functions\fn_handleMedicalAction.sqf";};
 			class medical{file="37RMSBaseMod\functions\fn_medical.sqf";};
 		}
+		class RegisterFunctions
+		{
+			class registerPlayerKilled{file="37RMSBaseMod\functions\fn_registerPlayerKilled.sqf";};
+			class registerPlayerRespawn{file="37RMSBaseMod\functions\fn_registerPlayerRespawn.sqf";};
+		}
 	}
 };

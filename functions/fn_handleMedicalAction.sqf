@@ -1,5 +1,6 @@
 params["_caller", "_target", "_selectionName", "_className"];
 
+systemChat str "medical event fired";
 if (isPlayer _target && alive _target && getPlayerUID _caller != getPlayerUID _target && _className in SuspiciousMedicalItems) then {
 	private _medicalName = "";
 	if (_className == "ApplyTourniquet") then {

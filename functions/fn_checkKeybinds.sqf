@@ -1,4 +1,7 @@
+if(!hasInterface) exitWith {};
 waitUntil{!isNull findDisplay 46};
+
+systemChat str "checking keybinds";
 
 private _throwKeybind = actionKeys "throw";
 if(count _throwKeybind > 0 && 34 in _throwKeybind) then {

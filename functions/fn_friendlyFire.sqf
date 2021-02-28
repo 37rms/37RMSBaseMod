@@ -1,8 +1,10 @@
 params ["_player"];
 
-_player addEventHandler ["HandleDamage", {
+systemChat str "adding friendly fire";
+player addEventHandler ["HandleDamage", {
     params ["_victim", "_selection", "_damage", "_attacker", "_projectile", "_hitIndex", "_instigator", "_hitPoint"];
 
+    systemChat str "damage event fired";
     if (isNil {_victim getVariable "lastDamageTime"}) then {
         _victim setVariable ["lastDamageTime", 0];
     };
