@@ -22,6 +22,11 @@ class CfgRemoteExec
 		{
 			allowedTargets = 0;
 			jip = 0;
-		}
+		};
+		class playActionNow
+		{
+			allowedTargets = 0;
+			jip = 0;
+		};
 	};
 };
