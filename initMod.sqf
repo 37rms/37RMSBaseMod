@@ -4,3 +4,6 @@ if (hasInterface) then {
 		player setVariable ["RMS_unitInitiated", true];
 	};
 };
+if (isServer) then {
+	call RMS_fnc_initServer;
+};

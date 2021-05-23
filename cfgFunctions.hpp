@@ -7,6 +7,7 @@ class CfgFunctions
 			file = "37RMSBaseMod\functions";
 			class initUnit{};
 			class initPlayer{};
+			class initMissionEvents{};
 		}
 		class HelperFunctions
 		{
@@ -20,11 +21,15 @@ class CfgFunctions
 			file = "37RMSBaseMod\functions";
 			class handleMedicalAction{};
 			class medical{};
+			class playSoundOnUnconscious{};
 		}
 		class startup{
 			file = "37RMSBaseMod\functions";
 			class initMod{
 				postInit = 1;
+			};
+			class initServer{
+
 			};
 		}
 	}
