@@ -29,7 +29,7 @@ class CfgFunctions
 				postInit = 1;
 			};
 			class initServer{
-
+				postInit = 1;
 			};
 		}
 	}
