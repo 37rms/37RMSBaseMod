@@ -1,10 +1,75 @@
 class cfgWeapons
 {
 	class ItemCore;
+	class InventoryItem_Base_F;
 	class H_HelmetB: ItemCore 
     { 
         class ItemInfo; 
     }; 
+
+	class Item_RMS37_generic: ItemCore
+	{
+		author="Nicer";
+		dlc="rms37pack";
+		scope=1;
+		access=3;
+		displayName="Generic Item (Nepouzivat)";
+		picture="\rms37pack\items\rms37_icon_item_paper";
+		descriptionShort="";
+		detectRange=-1;
+		simulation="ItemMineDetector";
+		useAsBinocular=0;
+		type=4096;
+		class ItemInfo: InventoryItem_Base_F
+		{
+			mass=2;
+		};
+	};
+	class Item_RMS37_license_firearm: Item_RMS37_generic
+	{
+		scope=2;
+		displayName="Zbrojni licence";
+	};
+	class Item_RMS37_license_pyrotechnic: Item_RMS37_generic
+	{
+		scope=2;
+		displayName="Pyrotechnicka licence";
+	};
+	class Item_RMS37_license_idcard: Item_RMS37_generic
+	{
+		scope=2;
+		displayName="Obcansky prukaz";
+		picture="\rms37pack\items\rms37_icon_item_idcard";
+	};
+	class Item_RMS37_license_passthrough: Item_RMS37_generic
+	{
+		scope=2;
+		displayName="Povoleni k prujezdu";
+	};
+	class Item_RMS37_drug_coke: Item_RMS37_generic
+	{
+		scope=2;
+		displayName="Cocaine";
+		picture="\rms37pack\items\rms37_icon_item_cocoaine";
+	};
+	class Item_RMS37_drug_weed: Item_RMS37_generic
+	{
+		scope=2;
+		displayName="Weed";
+		picture="\rms37pack\items\rms37_icon_item_weed";
+	};
+	class Item_RMS37_drug_dildo: Item_RMS37_generic
+	{
+		scope=2;
+		displayName="Dildo";
+		picture="\rms37pack\items\rms37_icon_item_dildo";
+	};
+	class Item_RMS37_drug_heart: Item_RMS37_generic
+	{
+		scope=2;
+		displayName="Human organ";
+		picture="\rms37pack\items\rms37_icon_item_heartorgan";
+	};
 	
 	class RMS37_Beret: H_HelmetB
 	{

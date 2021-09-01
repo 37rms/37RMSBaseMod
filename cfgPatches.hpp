@@ -20,7 +20,23 @@ class CfgPatches
 			"Flag_37RMS"
 		};
 		weapons[] = {
-			"RMS37_Beret", "RMS37_Beret_Leader", "RMS37_Beret_Granko", "RMS37_Beret_APF", "RMS37_Beret_CAF", "RMS37_Beret_Clawhammer", "RMS37_Beret_RACS", "RMS37_Beret_SLA"
+			"RMS37_Beret", 
+			"RMS37_Beret_Leader", 
+			"RMS37_Beret_Granko", 
+			"RMS37_Beret_APF", 
+			"RMS37_Beret_CAF", 
+			"RMS37_Beret_Clawhammer", 
+			"RMS37_Beret_RACS", 
+			"RMS37_Beret_SLA",
+			"Item_RMS37_generic",
+			"Item_RMS37_license_firearm",
+			"Item_RMS37_license_pyrotechnic",
+			"Item_RMS37_license_idcard",
+			"Item_RMS37_drug_coke",
+			"Item_RMS37_drug_weed",
+			"Item_RMS37_drug_dildo",
+			"Item_RMS37_drug_heart",
+			"Item_RMS37_license_passthrough"
 		};
 	};
 };
