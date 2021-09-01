@@ -24,12 +24,15 @@ class CfgFunctions
 			class medical{};
 			class playSoundOnUnconscious{};
 		}
-		class startup{
+		class startup
+		{
 			file = "rms37pack\functions";
-			class initMod{
+			class initMod
+			{
 				postInit = 1;
 			};
-			class initServer{
+			class initServer
+			{
 				postInit = 1;
 			};
 		}
