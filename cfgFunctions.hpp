@@ -15,6 +15,7 @@ class CfgFunctions
 			class addArsenal{};
 			class friendlyFire{};
 			class checkKeybinds{};
+			class setStamina{};
 		}
 		class MedicalFunctions
 		{
