@@ -10,7 +10,7 @@ removeStamina = {
 	_unit enableStamina false;
 };
 
-//[_unit] call removeStamina;
+[_unit] call removeStamina;
 
 _unit addEventHandler["Killed", {
 	params ["_unit", "_killer", "_instigator", "_useEffects"];
