@@ -1,1 +1,1 @@
-[] execVM "\37RMSBaseMod\initMod.sqf";
+[] execVM "\rms37pack\initMod.sqf";

@@ -20,7 +20,7 @@ addMissionEventHandler ["PlayerConnected",
 
 addMissionEventHandler ["HandleDisconnect", {
 	params ["_unit", "_id", "_uid", "_name"];
-	if(count units group _unit > 1 && leader group _unit == _unit) then {
+	if(count units group _unit > 1 && leader group _unit == _unit) then{
 		diag_log format ["#PLR_SL#%1#", _uid];
 	};
 	diag_log format ["#PLR_DC#%1#", _uid];
